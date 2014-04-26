@@ -1,0 +1,311 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.0 (5/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass['print']{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage[pdfauthor={Charlie Meyer},
+            pdftitle={Charlie Meyer résumé},
+            pdfsubject={Charlie Meyer résumé},
+            pdfkeywords={Charlie Meyer résumé},
+            pdfproducer={XeLateX},
+            pdfcreator={Xelatex}]{hyperref}
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+\begin{document}
+
+\header{charlie}{meyer}{software artist, computer scientist, open source enthusiast, tinkerer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+mailing address available upon request
+Austin, Texas
+~
+630.886.7082
+~
+\href{mailto:charlie@charliemeyer.net}{charlie@charliemeyer.net}
+\href{https://charliemeyer.net}{https://charliemeyer.net}
+\href{https://www.github.com/cemeyer2}{Github}
+\href{www.linkedin.com/in/cemeyer2}{LinkedIn}
+\section{tongue}
+native english,
+professional spanish proficiency
+\end{aside}
+
+\section{professional summary}
+
+\textbf{High energy}, creative and focused individual with excellent track record working in matrixed and dispersed team environments, recognized for leadership and team building skills, adept in oral and written communications.
+
+\section{objective}
+
+\textbf{To obtain} a full time position in the software engineering field at a dynamic high tech company.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2010-2012}
+{Masters of Science {\normalfont computer science}}
+{University of Illinois, Urbana-Champaign}
+{GPA: 3.8/4.0 \\
+Specialization: Software Engineering, Software Architecture, Design Patterns, Next Generation Computer Science Education \\ 
+Thesis: CoMoTo: The Collaboration Modeling Toolkit }
+%------------------------------------------------
+\entry
+{2005-2010}
+{Bachelor of Science {\normalfont computer science}}
+{University of Illinois, Urbana-Champaign}
+{GPA: 3.7/4.0 \\
+Specialization: Software Engineering, Information Assurance}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{industry experience}
+
+
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2014-Present}
+{HomeAway}
+{Austin, Texas}
+{\emph{Software Engineer} \\
+As the lead engineer for QA on HomeAway's core API, I architected a test suite comprised of over 15,000 individual test cases. This test suite also was enhanced with data-driven tests, continuous integration, and automated coverage analysis. I also led weekly releases of new core API code to HomeAway's production environment, acted as the point of synchronization across the company regarding the API team's needs, and led the development for the HomeAway Ruby REST API client.}
+\end{entrylist}
+\begin{entrylist}
+\entry
+{2012--2014}
+{IBM}
+{Austin, Texas}
+{\emph{Staff Software Engineer} \\
+Responsible for Power7+ AIX bring-up including integrated system test as well as an integral member of the
+Cluster Aware AIX team, the backbone of the clustering capabilities of the IBM enterprise grade UNIX operating system,
+which is an underlying component of IBM PowerHA and VIOS SSP. As part of that team, I led the effort to maintain, refactor,
+and enhance the AIX cluster communications daemon. \\
+Detailed achievements:
+\begin{itemize}
+\item Led the AIX effort to certify Oracle Real Application Clusters database on PowerHA
+\item Leader of IBM quality management for AIX Austin
+\item Enhanced AIX clustering to scale to 32 nodes and 1024 disks per node, including parallelization of core clustering libraries
+\item Enabled unicast AIX cluster heartbeating
+\item Enabled dynamic network configuration change support across clustered systems
+\item Co-author of patents in process
+\end{itemize}}
+\end{entrylist}
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2011-2012}
+{IBM}
+{Champaign, Illinois}
+{\emph{Campus Representative} \\
+Campus representative for the University of Illinois at Urbana-Champaign. Coordinated with IBM HR and recruiters to
+organize events to promote IBM on campus to students across campus. Actively pursued and recommended new candidates for engineering positions.}
+\end{entrylist}
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2010-2011}
+{IBM}
+{Austin, Texas}
+{\emph{Power Systems Test Engineer Co-op} \\
+Architected and developed an automated functional test suite composed of approximately 130 test cases for IBM Power Systems
+firmware using Rational tools, including Rational Functional Tester and Rational ClearQuest. Deployed existing and new code bases to Rational Quality Manager for usage by remote teams. Performed intensive Power Systems debugging, installs, and triage.}
+\end{entrylist}
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2008-2009}
+{IBM}
+{Rochester, Minnesota}
+{\emph{Power Systems Performance Co-op} \\
+Worked as a member of a team to benchmark systems, analyze performance data, develop workloads, perform
+maintenance on IBM Power Systems, and develop tools to aid in performance analysis. Worked with a variety of teams to turn technical challenges into useful tools to expedite performance work. Key skills include IBM i5/OS, Java, JDBC, IBM DB2, SQL, stored procedures, AS400 control language, IBM Hardware Management Consoles, and IBM Power systems. 
+\begin{itemize}
+\item Created an automation framework to streamline TPC-C benchmarks
+\item Developed the front-end and CL/C++ harness for a new implementation of TPC-E for IBM i
+\item Architected and developed an API to access Collection Services, PEX, JobWatcher, and DiskWatcher data from IBM i in Java
+\item Developed software to generate reports summarizing system performance from benchmark runs
+\item Created automation tools for enhancing and streamlining benchmark workflows
+\end{itemize}}
+\end{entrylist}
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2007-2008}
+{SOLIDWARE TECHNOLOGIES}
+{Champaign, Illinois}
+{\emph{Software Engineer} \\
+Worked as a member of an agile team developing a J2EE web based application which performed static code analysis using Spring, Hibernate, JavaCC, H2, Emma, and Docbook. Used automated building and testing with Hudson. \\
+Key responsibilities included:
+\begin{itemize}
+\item Developing new application functionality
+\item End to end QA, including unit testing, integration testing, and regression testing
+\item Writing product documentation and transforming it across a variety of mediums
+\item Participating in product launch strategy
+\item Translating business needs into technical requirements
+\end{itemize}}
+\end{entrylist}
+%------------------------------------------------
+
+\section{academia experience}
+
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2012}
+{UNIVERSITY OF ILLINOIS}
+{Urbana, Illinois}
+{\emph{Instructor} \\
+Instructor for graduate course on object-oriented programming, object-oriented design, and design patterns. Worked
+extensively with Smalltalk as a means to relay the concepts of the course and mentored several small group project
+teams on semester long object-oriented Smalltalk projects. Mentored by Gang of Four member Ralph Johnson.}
+\end{entrylist}
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2010-2012}
+{UNIVERSITY OF ILLINOIS}
+{Urbana, Illinois}
+{\emph{Graduate Teaching Assistant} \\
+Lead teaching assistant for software engineering and design course. Led weekly discussion sections focusing on proper program design, composition, and testing. Developed and delivered new lecture content to audiences of over 140 students and created new compounding programming assignments for students to complete. Gave weekly lectures to large audiences. Course objectives focused on writing clean, modular, and maintainable code in a variety of languages including C, C++, C\#, Java, Python, and Ruby. Other topics covered included Agile methods, proper testing and TDD, design patterns, build management, development environments, and revision control. The main themes that were taught focused around the practical side of software engineering and preparing students for full time careers in the field.}
+\end{entrylist}
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2007-2010}
+{UNIVERSITY OF ILLINOIS}
+{Urbana, Illinois}
+{\emph{Undergraduate Teaching Assistant} \\
+Teaching assistant for software engineering course mentioned above.}
+\end{entrylist}
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2007-2012}
+{UNIVERSITY OF ILLINOIS}
+{Urbana, Illinois}
+{\emph{CoMoTo Research Project Leader} \\
+Designed and built a system for detecting and visualizing instances of collaboration and plagiarism in student code
+submissions for programming assignments. Used lexicographical analysis and advanced data structuring and storage,
+along with a variety of libraries and frameworks to deploy the solution as a dedicated web application. Worked with
+professors of courses to determine system requirements and built the system into a hosted service for the Department of
+Computer Science. Worked with course staff to apply the system to analyze current code submissions.}
+\end{entrylist}
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2009-2010}
+{UNIVERSITY OF ILLINOIS}
+{Urbana, Illinois}
+{\emph{Research Assistant} \\
+Researcher on the Medical Device Plug and Play (MDPnP) project. Our group's goal was to design a flexible software architecture for complex systems of networked medical devices in a clinical setting. We initially mocked a system using the JavaScript programming language and reworked the architecture using a variety of technologies, including Java, JSON, and CouchDB. In addition to the direct medical architectures we proposed, we also developed and released a JavaScript framework for ensuring object-level security in the browser.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{awards}
+
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2011}
+{Outstanding Teaching Assistant Award}
+{College of Engineering, University of Illinois}
+{Awarded to the top teaching assistants in the college as voted by the student body.}
+\end{entrylist}
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2004}
+{Eagle Scout}
+{Boy Scouts of America}
+{}
+\end{entrylist}
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2005}
+{Vigil Honor Award}
+{Boy Scouts of America, Order of the Arrow Honor Society}
+{}
+\end{entrylist}
+%------------------------------------------------
+\begin{entrylist}
+\entry
+{2007-2012}
+{American Leadership Academy}
+{Cabo San Lucas, BCS, Mexico}
+{University Leader, Adult Mentor}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{PROFESSIONAL:} 
+\begin{itemize}
+\item \textbf{languages:} Java, JavaScript, C, C++, C\#, Ruby, Python, Perl, Bash and Korn scripting, HTML, CSS, XML, Docbook,
+XSLT, UML, AS400 CL, Rxx, Matlab, Smalltalk (Pharo), Maude, SQL, SQL PL, \LaTeX
+\item \textbf{frameworks/libraries:} Spring, Hibernate, Ant, Ruby on Rails, JUnit, log4j, YUI, Prototype, Scriptaculous, jQuery, Jasmine,
+Swing, SWT, GWT, Pylons, SQLAlchemy, Elixir, Pyramid, Seaside, Joomla, Android application development, Eclipse plugin development, vim plugin development,
+Wordpress, libpurple
+\item \textbf{development environments:} Eclipse, Netbeans, JetBrains IntelliJ Idea, Microsoft Visual Studio, Aptana Studio, JetBrains PyCharm, Pharo, Squeak,
+Smalltalk, vim
+\item \textbf{operating systems:} Linux (Ubuntu, RHEL and derivatives, SuSE SLES), Windows, Mac OS X, IBM AIX, IBM i5/OS,
+Cisco IOS
+\item \textbf{databases:} MySQL, Oracle (including RAC), IBM DB2, Postgres, SQLite, H2, Derby, CouchDB
+\item \textbf{other:} Subversion, Mercurial, Git, IBM CMVC, Jenkins, Selenium, Rational tools including Rational Functional Tester, Rational Performance
+Tester, Rational Quality Manager, Rational ClearCase and Rational ClearQuest, IBM PowerHA, IBM VIOS, IBM HMC, IBM
+SDMC, IBM FSP and BPC, Brocade and IBM SAN switches, IBM System Storage, EMC Storage, Hitachi Storage
+\end{itemize}
+\textbf{ACADEMIC:} object-oriented design patterns, enterprise application architecture, next-generation systems architecture, static program analysis, optimization by specialization, information integrity and assurance, distributed systems, next generation computer science education \\
+\textbf{PERSONAL:} f1 racing, skiing, world travel, culinary creativity and experimentation, car audio, electronic dance music
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{publications}
+
+\printbibsection{thesis}{thesis}
+
+\printbibsection{inproceedings}{international peer-reviewed conferences/proceedings} % Print all miscellaneous entries from the bibliography
+
+\printbibsection{report}{technical reports} % Print all research reports from the bibliography
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
