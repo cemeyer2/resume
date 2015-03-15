@@ -19,14 +19,19 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass['print']{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\documentclass{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
 \usepackage[pdfauthor={Charlie Meyer},
             pdftitle={Charlie Meyer résumé},
             pdfsubject={Charlie Meyer résumé},
             pdfkeywords={Charlie Meyer résumé},
             pdfproducer={XeLateX},
             pdfcreator={Xelatex}]{hyperref}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhf{}
+%\cfoot{\makebox[\textwidth][c]{page \thepage~of~\pageref{LastPage}}}
 \addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+\pagestyle{fancy}
 \begin{document}
 
 \header{charlie}{meyer}{software artist, computer scientist, open source enthusiast, tinkerer} % Your name and current job title/field
@@ -89,7 +94,7 @@ Specialization: Software Engineering, Information Assurance}
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
-
+\pagebreak
 \section{industry experience}
 
 
@@ -100,10 +105,19 @@ Specialization: Software Engineering, Information Assurance}
 {HomeAway}
 {Austin, Texas}
 {\emph{Software Engineer} \\
-At HomeAway, I am leading the effort to unify our front-end ruby-based testing infrastructure to also cover our API, enterprise messaging, big data, and other platforms. My primary focus is on guiding our development teams and architects on how to engineer QA into their projects from the start, by communicating with them on a technical CS level that they can relate with. I also am the lead developer on our several of our Ruby gems used to communicate with and test our backend services. I daily deal with technologies such as RabbitMQ, Elastic Search, Hadoop, Solr, MSSQL, Spring, among many others.
-\newline
-\newline
-In my 10\% time, I have been working on projects that relate to a combination of static and dynamic analysis of our backend codebase, logging, and test results piped into big data (hadoop via kafka) to deliver meaningful metrics not only to the QA organization but also all of HomeAway at large. }
+At HomeAway, I am leading the effort to unify our front-end ruby-based testing infrastructure to also cover our API, enterprise messaging, big data, and other platforms. My primary focus is on guiding our development teams and architects on how to engineer QA into their projects from the start, by communicating with them on a technical CS level that they can relate with. I also am the lead developer on our several of our Ruby gems used to communicate with and test our backend services. I daily deal with technologies such as RabbitMQ, Elastic Search, Hadoop, Solr, MSSQL, Spring, git, IntelliJ IDEA, TeamCity, Jira, Confluence, QuickBuild, RRDTool, Splunk, among many others. \\
+Detailed achievements:
+\begin{itemize}
+\item Led the quality effort to roll out HomeAway's new owner inbox application based on ElasticSearch
+\item Developed HomeAway-specific Ruby libraries to communicate with our internal infrastructure including ElasticSearch, Microsoft SQL Server, Opsview, and RabbitMQ
+\item Delivered PoC work to integrate the Jolokia JMX library into the HomeAway stack
+\item Developed and delivered training sessions to the QA and development organizations covering HomeAway's platform architecture and each of its component technologies
+\item Led the quality effort for our new platform search service based on ElasticSearch
+\item Organized workshops for our engineering group to bring in distinguished speakers in the Computer Science field
+\item Led the quality effort to roll out a new caching infrastructure for our high traffic API
+\item Developed several load test suites and used them to perform load and scale analysis across many of our core platform applications
+\item Organized, verified, and led over 75 live production releases of our core platform applications
+\end{itemize}}
 \end{entrylist}
 \begin{entrylist}
 \entry
@@ -180,7 +194,7 @@ Key responsibilities included:
 \end{itemize}}
 \end{entrylist}
 %------------------------------------------------
-
+\pagebreak
 \section{academia experience}
 
 %------------------------------------------------
@@ -238,7 +252,7 @@ Researcher on the Medical Device Plug and Play (MDPnP) project. Our group's goal
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
-
+\pagebreak
 \section{awards}
 
 %------------------------------------------------
