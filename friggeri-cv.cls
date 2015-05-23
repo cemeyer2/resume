@@ -204,6 +204,7 @@
 \DeclareFieldFormat[inproceedings]{title}{#1\par}
 \DeclareFieldFormat[misc]{title}{#1\par}
 \DeclareFieldFormat[report]{title}{#1\par}
+\DeclareFieldFormat[patent]{title}{#1\par}
 
 \DeclareBibliographyDriver{article}{%
   \printfield{title}%
@@ -320,6 +321,27 @@
   \setunit{\space}%
   \newline%
     \usebibmacro{institution+location+date}%
+    \newline%
+    \newunit\newblock
+          \setunit{\space}%
+  \printfield{url}%
+  }
+  \par\vspace{0.3\baselineskip}
+}
+
+\DeclareBibliographyDriver{patent}{%
+  \printfield{title}%
+  \newblock%
+  \printnames{author}%
+  \par%
+  \newblock%
+  {%
+    \footnotesize\addfontfeature{Color=lightgray}%
+    \printfield{type}%
+    \setunit{\addcomma\space}%
+    \printfield{year}%
+    \setunit{\addcomma\space}%
+    \printlist{location}%
     \newline%
     \newunit\newblock
           \setunit{\space}%
